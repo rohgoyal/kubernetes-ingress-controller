@@ -406,7 +406,9 @@ metadata:
   name: harry
   annotations:
     plugins.konghq.com: harry-rate-limit
-username: harry" | kubectl apply -f -
+username: harry
+credentials:
+- harry-apikey" | kubectl apply -f -
 kongconsumer.configuration.konghq.com/harry configured
 ```
 
